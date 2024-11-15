@@ -1,0 +1,10 @@
+
+:root{
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
+
+body{
+    background: var(--berge-color);
+}

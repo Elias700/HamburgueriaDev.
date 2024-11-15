@@ -1,0 +1,241 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Itim&family=Protest+Strike&display=swap');
+
+:root {
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--berge-color);
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    color: var(--verde-color);
+    margin-bottom: 10px;
+    font-family: "Instrument Serif", serif;
+    font-size: 50px;
+}
+
+.subtitle {
+    color: var(--vermelho-color);
+    margin-bottom: 30px;
+    font-family: "Instrument Serif", serif;
+    font-size: 30px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid var(--verde-color);
+    border-radius: 5px;
+    font-size: 16px;
+    background: var(--berge-color);
+}
+
+::placeholder{
+    color: var(--vermelho-color);
+}
+
+.btt .botao1 {
+    padding: 10px 30px;
+    background-color: var(--vermelho-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Instrument Serif", serif;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.btt button:hover {
+    background-color: #a00e0e;
+}
+
+/* icones */
+.icons {
+    display: flex;
+    flex-direction: row; /* Define os ícones lado a lado */
+    gap: 20px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 10px;
+}
+
+.icons svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: var(--verde-color);
+    transition: 0.5s;
+}
+
+.icons svg:hover {
+    color: var(--vermelho-color);
+}
+
+p {
+    margin: 10px 0;
+}
+
+a {
+    color: var(--vermelho-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    top: 25px; /* Move a imagem 20px para cima */
+}
+
+
+
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    div {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    input {
+        font-size: 14px;
+    }
+
+    .icons svg {
+        width: 25px;
+        height: 25px;
+        position: relative;
+        bottom: 25px;
+    }
+
+    .botao1{
+        position: relative;
+        bottom: 15px;
+    }
+
+    #p1{
+        position: relative;
+        bottom: 45px;
+    }
+
+    #p2{
+        position: relative;
+        bottom: 50px;
+    }
+
+    
+}
+
+
+
+@media (min-width: 1024px) {
+    div {
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 35px;
+    }
+
+    input {
+        font-size: 18px;
+    }
+
+    .icons svg {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+
+
+@media (min-width: 1920px) {
+    div {
+        padding: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    input {
+        font-size: 20px;
+    }
+
+    .icons svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    svg{
+        position: relative;
+        bottom: 150px;   
+    }
+
+    .botao1{
+        position: relative;
+        bottom: 60px;           
+    }                           
+
+    p{
+        position: relative;
+        bottom: 100px;
+    }
+
+    #p1{
+        position: relative;
+        bottom: 250px;
+    }
+
+    #p2{
+        position: relative;
+        bottom: 250px;
+    }
+}
+
+
+
+
