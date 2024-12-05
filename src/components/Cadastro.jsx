@@ -1,17 +1,15 @@
 
 
-import { useNavigate } from 'react-router-dom';
+
 import './Cadastro.css';
 
 const Cadastro = () => {
-
-    const navidate = useNavigate();
-
     return (
         <div>
             <h2 className='title'>Hamburguerai Dev</h2>
             <h3 className='subtitle'>Cadastro</h3>
             <form>
+                <input type="text" placeholder='Nome'/>
                 <input type="text" placeholder='E-mail'/>
                 <input type="password" placeholder='Senha'/>
                 <input type="password" placeholder='Confirme a senha'/>
@@ -19,7 +17,7 @@ const Cadastro = () => {
             <div className='btt'>
                 <button className='botao2'>Cadastre-se</button>
             </div>
-            <p id='p3'>Já possu conta? <a href="" onClick={() => navidate('/login')}>Faça login</a> </p>
+            <p id='p3'>Já possu conta? <a href="/login">Faça login</a> </p>
         </div>
     )
 };

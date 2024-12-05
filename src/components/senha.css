@@ -1,0 +1,142 @@
+:root {
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
+
+/* Base container styling */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--vermelho-color);
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #386641;
+}
+
+.instruction {
+    font-size: 1rem;
+    margin-top: 20px;
+    display: block;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--verde-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+::placeholder{
+    color: #8C0E0E;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: var(--vermelho-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Instrument Serif", serif;
+    font-size: 1rem;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background-color: darkred;
+}
+
+.back-link {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--vermelho-color);
+    font-size: 1rem;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .instruction {
+        font-size: 0.9rem;
+    }
+
+    .input, .button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .instruction {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        font-size: 0.8rem;
+    }
+}
+
+/* Larger screens (TVs) */
+@media (min-width: 1200px) {
+    .title {
+        font-size: 2.5rem;
+    }
+
+    .subtitle {
+        font-size: 2rem;
+    }
+
+    .instruction {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        max-width: 800px;
+    }
+}
