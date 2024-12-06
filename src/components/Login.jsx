@@ -11,9 +11,9 @@ const Login = ({Logo, Logo2}) => {
 
     const [login, setLogin] = useState('');
 
-    const recuperacaoSenha = () => {
-        alert('Foi enviado um email para recuperação da senha')
-    };
+    const EventClick = () => {
+
+    }
 
     return (
         <div>
@@ -23,7 +23,7 @@ const Login = ({Logo, Logo2}) => {
                 <input type="text" placeholder='E-mail'/>
                 <input type="password" placeholder='Senha'/>
                 <div className="btt">
-                    <button className='botao1' >Login</button>
+                    <button className='botao1'>Login</button>
                 </div>
            </form>
             <p>Entrar com</p>
