@@ -1,0 +1,16 @@
+
+
+:root {
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
+
+main{
+    background: var(--verde-color);
+}
+
+h1{
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}

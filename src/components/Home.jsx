@@ -27,7 +27,7 @@ const Home = ({ logoPizza }) => {
             </header>
 
             <div>
-                <h1>Hamburgueria Dev</h1>
+                <h1 className='title'>Hamburgueria Dev</h1>
                 <div className="configuration">
                     <p>Venha conhecer os diversos sabores de pizzas e as melhores promoções</p>
                     <img src={logoPizza} alt="Pizza logo" />
