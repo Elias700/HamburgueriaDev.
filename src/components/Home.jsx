@@ -1,15 +1,23 @@
+import './Home.css';
+import { useState } from 'react';
 
-import './Home.css'
+const Home = ({ logoPizza }) => {
+    const [menuOpen, setMenuOpen] = useState(false);
 
-const Home = ({logoPizza}) => {
-
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
 
     return (
-        <div className='container'>
-
+        <div className="container">
             <header>
-                <nav className='navegation'>               
-                    <ul>
+                <nav className="navegation">
+                    <div className="hamburger" onClick={toggleMenu}>
+                        <span className={menuOpen ? "line open" : "line"}></span>
+                        <span className={menuOpen ? "line open" : "line"}></span>
+                        <span className={menuOpen ? "line open" : "line"}></span>
+                    </div>
+                    <ul className={menuOpen ? "menu open" : "menu"}>
                         <li>Combos</li>
                         <li>Bebidas</li>
                         <li>Promoções</li>
@@ -20,15 +28,14 @@ const Home = ({logoPizza}) => {
 
             <div>
                 <h1>Hamburgueria Dev</h1>
-                <div className='configuration'>
+                <div className="configuration">
                     <p>Venha conhecer os diversos sabores de pizzas e as melhores promoções</p>
-                    <img src={logoPizza} alt="" />
+                    <img src={logoPizza} alt="Pizza logo" />
                 </div>
                 <button>Confira</button>
             </div>
-
         </div>
-    )
+    );
 };
 
 export default Home;

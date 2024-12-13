@@ -1,13 +1,128 @@
 
+:root {
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
 
-
-.navegation ul{
+header {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; 
+    background-color: var(--vermelho-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px;
+}
+
+.navegation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger .line {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.hamburger .line.open:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger .line.open:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger .line.open:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
     gap: 40px;
+    padding: 10px 0;
+    transition: all 0.3s;
 }
 
-li{
-    list-style: none;
+.menu.open {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 80%; 
+    background-color: rgb(103, 9, 9);
+    padding: 20px;
+    z-index: 1000;
+    color: #fff;
 }
 
+.menu.open li {
+    text-align: center;
+    position: relative;
+    left: 35px;
+    font-size: 20px;
+}
+
+h1{
+    position: relative;
+    top: 60px;
+    color: var(--verde-color);
+    font-size: 40px;
+}
+
+p{
+    color: var(--vermelho-color);
+    font-size: 20px;
+    position: relative;
+    top: 80px;
+}
+
+img{
+    position: relative;
+    top: 110px;
+}
+
+button{
+    background: var(--verde-color);
+    padding: 15px 50px;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: 170px;
+    border: none;
+    border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.open {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
