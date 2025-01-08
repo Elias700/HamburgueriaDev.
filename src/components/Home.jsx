@@ -21,18 +21,18 @@ const Home = ({ logoPizza }) => {
                         <li>Combos</li>
                         <li>Bebidas</li>
                         <li>Promoções</li>
-                        <li>Login</li>
+                        <li><a href="/login">Login</a></li>
                     </ul>
                 </nav>
-            </header>
+            </header> 
 
             <div>
                 <h1 className='title'>Hamburgueria Dev</h1>
                 <div className="configuration">
-                    <p>Venha conhecer os diversos sabores de pizzas e as melhores promoções</p>
+                    <p className='paragrafo'>Venha conhecer os diversos sabores de pizzas e as melhores promoções</p>
                     <img src={logoPizza} alt="Pizza logo" />
                 </div>
-                <button>Confira</button>
+                <button className='btt.principal'>Confira</button>
             </div>
         </div>
     );

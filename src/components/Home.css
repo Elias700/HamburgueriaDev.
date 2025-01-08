@@ -85,14 +85,18 @@ header {
     font-size: 20px;
 }
 
+li{
+    color: #fff;
+}
+
 .title{
     position: relative;
     top: 5px;
     color: var(--verde-color);
-    font-size: 80px;
+    font-size: 60px;
 }
 
-p{
+.paragrafo{
     color: var(--vermelho-color);
     font-size: 20px;
     position: relative;
@@ -104,7 +108,7 @@ img{
     top: 110px;
 }
 
-button{
+.btt.principal{
     background: var(--verde-color);
     padding: 15px 50px;
     font-size: 20px;
