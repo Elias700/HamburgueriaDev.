@@ -6,7 +6,51 @@
     --vermelho-color: #8C0E0E;
 }
 
+
 h1{
-    color: #fff;
-    text-shadow: 2px 2px #000;
+    color: var(--berge-color);
+    text-align: center;
+    position: relative;
+    top: 35px;
 }
+
+main{
+    position: relative;
+    top: 260px;
+    background: var(--verde-color);
+}
+
+.productos {
+    display: grid;
+    gap: 16px;
+}
+
+.fundo {
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    top: 50px;
+}
+
+.fundo-0, .fundo-1, .fundo-2, .fundo-3{
+    background-color: #fff; 
+}
+
+.img-pizza{
+    width: 200px;
+    height: 200px;
+    
+}
+
+.title-pizza{
+    color: #000;
+}
+
+.description{
+    color: #000;
+}
+
+.price{
+    color: var(--vermelho-color);
+}
+

@@ -21,16 +21,16 @@ function App() {
   return (
     <>
 
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home logoPizza={logoPizza}/>}/>
-        <Route path='/login' element={<Login Logo={Logo} Logo2={Logo2}/>}/>
-        <Route path='/cadastro' element={<Cadastro />}/>
-        <Route path='/senha' element={<Senha/>}/>
-        <Route path='combos' element={<Combos Pizza1={Pizza1}/>}/>
-      </Routes>
-    </BrowserRouter>
-      
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home logoPizza={logoPizza}/>}/>
+          <Route path='/login' element={<Login Logo={Logo} Logo2={Logo2}/>}/>
+          <Route path='/cadastro' element={<Cadastro />}/>
+          <Route path='/senha' element={<Senha/>}/>
+        </Routes>
+      </BrowserRouter>
+        
+        <Combos />
     </>
   )
 }
