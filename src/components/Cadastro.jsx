@@ -4,7 +4,7 @@
 import './Cadastro.css';
 
 const Cadastro = () => {
-    return (
+    return ( 
         <div>
             <h2 className='title'>Hamburguerai Dev</h2>
             <h3 className='subtitle'>Cadastro</h3>

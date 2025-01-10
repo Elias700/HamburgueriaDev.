@@ -27,12 +27,12 @@ const Home = ({ logoPizza }) => {
             </header> 
 
             <div>
-                <h1 className='title'>Hamburgueria Dev</h1>
+                <h1 className='titulo'>Hamburgueria Dev</h1>
                 <div className="configuration">
                     <p className='paragrafo'>Venha conhecer os diversos sabores de pizzas e as melhores promoções</p>
-                    <img src={logoPizza} alt="Pizza logo" />
+                    <img src={logoPizza} alt="Pizza logo" className='logo-pizza'/>
                 </div>
-                <button className='btt.principal'>Confira</button>
+                <button className='btt-principal'>Confira</button>
             </div>
         </div>
     );

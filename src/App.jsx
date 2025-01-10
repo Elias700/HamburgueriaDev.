@@ -11,9 +11,9 @@ import Pizza1 from './assets/pizza1.png'
 //components
 import Login from './components/Login';
 import Cadastro from './components/Cadastro';
-import Senha from './components/senha';
 import Home from './components/Home';
 import Combos from './components/Combos';
+import Senha from './components/senha';
 
 function App() {
 

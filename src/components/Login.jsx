@@ -21,7 +21,7 @@ const Login = () => {
                     <BsTwitterX id='icon'/>
                 </div>
                 <p>Não tem conta? <a href="/cadastro">registre-se</a></p>
-                <p><a href="/recuperar">Recuperar Senha</a></p>
+                <p><a href="/senha">Recuperar Senha</a></p>
             </div> 
        </div>
     );

@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Itim&family=Protest+Strike&display=swap');
 
+.subtitle{
+    text-align: center;
+}
+
 .btt .botao2 {
     padding: 10px 30px;
     background-color: var(--vermelho-color);
@@ -12,8 +16,11 @@
     font-family: "Instrument Serif", serif;
     font-size: 18px;
     transition: 0.5s;
-    position: relative;
-    top: 20px;
+}
+
+.btt{
+    display: flex;
+    justify-content: center;
 }
 
 .btt button:hover {
