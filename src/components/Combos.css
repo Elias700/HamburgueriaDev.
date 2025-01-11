@@ -1,56 +1,141 @@
-
-
 :root {
     --berge-color: #F2E8CF; 
     --verde-color: #386641;
     --vermelho-color: #8C0E0E;
 }
 
-
-h1{
+h1 {
     color: var(--berge-color);
     text-align: center;
     position: relative;
     top: 35px;
+    font-size: 2rem;
 }
 
-main{
+main {
     position: relative;
     top: 260px;
     background: var(--verde-color);
+    padding: 20px;
 }
 
 .productos {
     display: grid;
-    gap: 16px;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adaptação flexível */
+    justify-items: center; /* Alinhamento horizontal dos itens */
+    align-items: start; /* Alinhamento vertical dos itens */
+    position: relative;
+    top: 50px;
 }
 
 .fundo {
     padding: 20px;
     border-radius: 8px;
-    position: relative;
-    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: var(--berge-color);
+    height: 100%; /* Garante altura consistente */
+    box-sizing: border-box; /* Inclui padding no cálculo do tamanho */
 }
 
-.fundo-0, .fundo-1, .fundo-2, .fundo-3{
-    background-color: #fff; 
+.fundo:hover {
+    transform: scale(1.02);
 }
 
-.img-pizza{
-    width: 200px;
-    height: 200px;
-    
+.img-pizza {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
 }
 
-.title-pizza{
+.title-pizza {
     color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 
-.description{
+.description {
     color: #000;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    flex-grow: 1; /* Faz a descrição expandir para preencher espaço vazio */
 }
 
-.price{
+.price {
     color: var(--vermelho-color);
+    text-align: end;
+    font-size: 1.6rem;
 }
 
+.btt-adicionar {
+    background: var(--vermelho-color);
+    border: none;
+    border-radius: 8px;
+    color: var(--berge-color);
+    padding: 5px 20px; /* Padding reduzido */
+    font-size: 0.9rem; /* Fonte menor */
+    max-width: 100px; /* Tamanho máximo do botão */
+    width: 100%; /* Faz o botão ocupar a largura disponível até o máximo definido */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btt-adicionar:hover {
+    background: var(--verde-color);
+    transform: scale(1.05);
+}
+
+.ajuste {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Responsividade */
+/* Para telas menores (dispositivos móveis) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .productos {
+        grid-template-columns: 1fr; /* Um item por linha */
+        gap: 20px;
+    }
+
+    .title-pizza {
+        font-size: 1.3rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.4rem;
+    }
+
+    .btt-adicionar {
+        padding: 10px;
+        font-size: 1rem;
+        width: 100%;
+    }
+}
+
+/* Para telas maiores (desktop e TV) */
+@media (min-width: 1024px) {
+    .productos {
+        grid-template-columns: repeat(4, 1fr); /* Quatro itens por linha */
+        gap: 40px; /* Mais espaçamento entre os itens */
+    }
+}

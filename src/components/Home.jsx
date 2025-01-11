@@ -18,7 +18,7 @@ const Home = ({ logoPizza }) => {
                         <span className={menuOpen ? "line open" : "line"}></span>
                     </div>
                     <ul className={menuOpen ? "menu open" : "menu"}>
-                        <li>Combos</li>
+                        <li><a href="/combos">Combos</a></li>
                         <li>Bebidas</li>
                         <li>Promoções</li>
                         <li><a href="/login">Login</a></li>

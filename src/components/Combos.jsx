@@ -2,7 +2,7 @@
 
 import './Combos.css'
 
-const Combos = ({Pizza1}) => {
+const Combos = () => {
 
     const products = [ 
         {
@@ -42,8 +42,10 @@ const Combos = ({Pizza1}) => {
                         <img src={product.img} alt="Pizza" height={'200px'} className='img-pizza'/>
                         <h2 className='title-pizza'>{product.title}</h2>
                         <p className='description'>{product.descption}</p>
-                        <strong className='price'>{product.price}</strong>
-                        <button>Adicionar</button>
+                        <div className='ajuste'>
+                            <strong className='price'>{product.price}</strong>
+                            <button className='btt-adicionar'>Adicionar</button>
+                        </div>
                     </div>
                 ))}
             </section>
