@@ -9,6 +9,9 @@
     list-style: none;
 }
 
+body{
+    height: 100vh;
+}
 
 header {
     position: fixed;

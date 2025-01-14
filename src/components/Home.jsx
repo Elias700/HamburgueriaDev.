@@ -1,6 +1,8 @@
 
 import './Home.css';
 import Combos from './Combos';
+import Bebidas from './Bebidas'; 
+
 import { useState } from 'react';
 
 const Home = ({ logoPizza }) => {
@@ -37,6 +39,7 @@ const Home = ({ logoPizza }) => {
                 <button className='btt-principal'>Confira</button>
             </div>
           <Combos />
+          <Bebidas />
         </div>
     );
 };
