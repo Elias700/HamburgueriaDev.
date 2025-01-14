@@ -1,8 +1,6 @@
-
-import './Combos.css'
+import './Combos.css';
 
 const Combos = () => {
-
     const produtos = [
         {
             id: 1,
@@ -32,26 +30,26 @@ const Combos = () => {
             price: 'R$ 13,90',
             description: 'Compre uma fatia e pague pela próxima metade do preço!'
         }
-    ]
-
-
+    ];
 
     return (
         <main>
             <h1>Combos</h1>
-            <section>
+            <section className="combos-container">
                 {produtos.map((produto) => (
-                    <div>
-                        <img src={produto.img} alt="pizza" height={'200px'}/>
+                    <div key={produto.id} className='produto-card'>
+                        <img src={produto.img} alt="pizza" height={'200px'} />
                         <h2>{produto.title}</h2>
                         <p>{produto.description}</p>
-                        <strong>{produto.price}</strong>
-                        <button>Adicionar</button>
+                        <div className='ajuste-price-btt'>
+                            <strong>{produto.price}</strong>
+                            <button>Adicionar</button>
+                        </div>
                     </div>
                 ))}
             </section>
         </main>
-    )
+    );
 };
 
 export default Combos;

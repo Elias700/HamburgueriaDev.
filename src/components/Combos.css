@@ -1,12 +1,87 @@
 
+:root {
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
 
-
-h1{
-    color: green;
+main{
     position: relative;
-    top: 50px;
+    top: 300px;
+    padding: 20px;
 }
 
-p {
-    color: pink;
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+.combos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.produto-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 300px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+.produto-card img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.produto-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.produto-card p {
+    font-size: 0.95em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.ajuste-price-btt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ajuste-price-btt strong {
+    font-size: 1.1em;
+    color: #333;
+}
+
+.ajuste-price-btt button {
+    background-color: #ff5a5f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.ajuste-price-btt button:hover {
+    background-color: var(--verde-color);  
+}
+
+.produto-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
