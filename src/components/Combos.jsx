@@ -1,55 +1,55 @@
 
-
 import './Combos.css'
 
 const Combos = () => {
 
-    const products = [ 
+    const produtos = [
         {
-            img: "https://img.freepik.com/fotos-gratis/uma-fatia-de-pizza-crocante-com-carne-e-queijo_140725-6974.jpg?ga=GA1.1.1549449650.1701212212&semt=ais_hybrid",
-            title: "Pizza Família + Refrigerante",
-            descption: "Compre uma pizza familia e ganhe um refrigerante de 1 litro!",
-            price: "R$ 59,90"
+            id: 1,
+            title: 'Pizza Família + Refrigerante',
+            img: 'https://img.freepik.com/fotos-gratis/uma-fatia-de-pizza-crocante-com-carne-e-queijo_140725-6974.jpg?t=st=1736875053~exp=1736878653~hmac=efb18704706c94cfd233ff737b1dc1fadfe80541d369049a3c456162dacb4d66&w=740',
+            price: 'R$ 59,90',
+            description: 'Compre uma pizza familia e ganhe um refrigerante de 1 litro!'
         },
         {
-            img: "https://img.freepik.com/fotos-gratis/pizza-de-salsicha-coberta-com-folha-de-louro_140725-1220.jpg?t=st=1736515284~exp=1736518884~hmac=f0fbe7a6dfafac0c9f950eeae41c94b1a69b568a85ff7beb249f8f583ef858d4&w=740",
-            title: "Pizza Grande + Refrigerante",
-            descption: "Compre uma pizza grande e ganhe um refrigerante de 1 litro!",
-            price: "R$ 45,00"
+            id: 2,
+            title: 'Pizza Grande + Refrigerante',
+            img: 'https://img.freepik.com/fotos-gratis/pizza-de-salsicha-coberta-com-folha-de-louro_140725-1220.jpg?t=st=1736875783~exp=1736879383~hmac=0654e8a1c37ba7cfdcfa866036abd5e10cd7b2e1cab9cd2a8df03862824cf296&w=740',
+            price: 'R$ 45,00',
+            description: 'Compre uma pizza grande e ganhe um refrigerante de 1 litro!'
         },
         {
-            img: "https://img.freepik.com/fotos-gratis/pizza-com-fatias-de-calabresa-e-molho-de-tomate_114579-2944.jpg?t=st=1736515390~exp=1736518990~hmac=bd64edffa696334e998a704df7e9bb7e590315e17d93f59819c717e67afc3707&w=740",
-            title: "Pizza Média + Refrigerante",
-            descption: "Compre uma pizza média e ganhe um refrigerante de 1 litro!",
-            price: "R$ 32,50"
+            id: 3,
+            title: 'Pizza Média + Refrigerante',
+            img: 'https://img.freepik.com/fotos-gratis/pizza-com-salsichas-fatiadas-e-suco-de-laranja_140725-3666.jpg?t=st=1736875860~exp=1736879460~hmac=a5174c49abcb80ece87d883379e39843f56b2281621bd943527c2b4e1b7e3c82&w=740',
+            price: 'R$ 32,50',
+            description: 'Compre uma pizza média e ganhe um refrigerante de 1 litro!'
         },
         {
-            img: "https://img.freepik.com/fotos-gratis/fatia-plana-de-pizza-de-pepperoni-no-prato_23-2148765310.jpg?t=st=1736515416~exp=1736519016~hmac=7f0f6f8c4214fdba22aae4eca4fcb7a12d2e9c1091d2c6e74fea3d1c5fbe1037&w=826",
-            title: "Fatia",
-            descption: "Compre uma fatia e pague pela próxima metade do preço!",
-            price: "R$ 13,90"
+            id: 4,
+            title: 'Fatia',
+            img: 'https://img.freepik.com/fotos-gratis/fatia-plana-de-pizza-de-pepperoni-no-prato_23-2148765310.jpg?t=st=1736875883~exp=1736879483~hmac=53a1734408c24d8f644fc4b491570f722e7255491ac540e68bf397cd27e3dbdd&w=826',
+            price: 'R$ 13,90',
+            description: 'Compre uma fatia e pague pela próxima metade do preço!'
         }
-    ];
+    ]
+
+
 
     return (
-
         <main>
             <h1>Combos</h1>
-
-            <section className="productos">
-                {products.map((product, index) => (
-                    <div key={index} className={`fundo fundo-${index}`}>
-                        <img src={product.img} alt="Pizza" height={'200px'} className='img-pizza'/>
-                        <h2 className='title-pizza'>{product.title}</h2>
-                        <p className='description'>{product.descption}</p>
-                        <div className='ajuste'>
-                            <strong className='price'>{product.price}</strong>
-                            <button className='btt-adicionar'>Adicionar</button>
-                        </div>
+            <section>
+                {produtos.map((produto) => (
+                    <div>
+                        <img src={produto.img} alt="pizza" height={'200px'}/>
+                        <h2>{produto.title}</h2>
+                        <p>{produto.description}</p>
+                        <strong>{produto.price}</strong>
+                        <button>Adicionar</button>
                     </div>
                 ))}
             </section>
-
         </main>
     )
 };

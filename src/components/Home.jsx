@@ -1,4 +1,6 @@
+
 import './Home.css';
+import Combos from './Combos';
 import { useState } from 'react';
 
 const Home = ({ logoPizza }) => {
@@ -34,6 +36,7 @@ const Home = ({ logoPizza }) => {
                 </div>
                 <button className='btt-principal'>Confira</button>
             </div>
+          <Combos />
         </div>
     );
 };

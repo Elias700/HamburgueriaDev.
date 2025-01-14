@@ -91,11 +91,8 @@ li a{
 }
 
 .titulo{
-    position: relative;
-    top: 30px;
     color: var(--verde-color);
-    font-size:40px;
-    text-shadow: none;
+    font-size: 40px;
 }
 
 .paragrafo{
