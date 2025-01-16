@@ -13,6 +13,7 @@ import Login from './components/Login';
 import Cadastro from './components/Cadastro';
 import Home from './components/Home';
 import Senha from './components/senha';
+import RodaPe from './components/RodaPe';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
         </Routes>
       </BrowserRouter>
         
+      <RodaPe />
         
     </>
   )

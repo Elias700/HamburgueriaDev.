@@ -1,0 +1,42 @@
+
+
+:root {
+    --berge-color: #F2E8CF; 
+    --verde-color: #386641;
+    --vermelho-color: #8C0E0E;
+}
+
+.rodape {
+    height: 14vh;
+    position: relative;
+    top: 300px;
+}
+
+.icons {
+    background: var(--vermelho-color);
+    padding: 20px;
+}
+
+
+.rodape-text {
+    background: var(--verde-color);
+    padding: 13px;
+    position: relative;
+    bottom: 10px;
+}
+
+.icones:hover {
+    color: var(--berge-color);
+    transition: 0.5s;
+}
+
+.paragrafo-text {
+    color: var(--berge-color);
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px){
+    .icons{
+        font-size: 1.7rem;
+    }
+}
