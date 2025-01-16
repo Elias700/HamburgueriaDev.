@@ -9,7 +9,7 @@ const Bebidas = () => {
             title: 'Coca-Cola - 1 Litro',
             ml: '350ml',
             price: 'R$ 7,99',
-            img: 'https://mfresh.s3.amazonaws.com/uploads/product/sku/9055/image/5b57f722-9cc2-4c8c-91d1-6b8caa6e58b2.png'
+            img: 'https://www.naturaldaterra.com.br/_next/image?url=https%3A%2F%2Fnaturalterra.vtexassets.com%2Farquivos%2Fids%2F171345%2FRefrigerante-Coca-Cola-Garrafa-2L.jpg%3Fv%3D638671094706770000&w=1440&q=75'
         },
         {
             id: 2,
@@ -58,20 +58,20 @@ const Bebidas = () => {
     return (
         <main>
             <h2>Bebidas</h2>
-            <div className='ajuste'>
+            <section className="combos-container">
                 {Bebidas.map((Bebida) => (
-                    <div>
+                    <div key={Bebida.id} className='produto-card'>
                         <img src={Bebida.img} alt="Bebida" height={'250px'}/>
                         <h2>{Bebida.title}</h2>
                         <p>{Bebida.ml}</p>
-                        <strong>{Bebida.price}</strong>
-                        <button>Adicionar</button>
+                        <div className='ajuste-price-btt'>
+                            <strong>{Bebida.price}</strong>
+                            <button>Adicionar</button>
+                        </div>
                     </div>
                 ))}
-            </div>
-        </main>
-            
-        
+            </section>
+        </main>       
     )
 };
 
