@@ -15,11 +15,13 @@ const Login = () => {
             </form>
             <div>
                 <p>Entrar com</p>
-                <div className='icons'>
+                
+                <div className='ajuste-icons'>
                     <FaInstagram id='icon'/>
                     <FaFacebook id='icon'/>
                     <BsTwitterX id='icon'/>
                 </div>
+               
                 <p>Não tem conta? <a href="/cadastro">registre-se</a></p>
                 <p><a href="/senha">Recuperar Senha</a></p>
             </div> 
